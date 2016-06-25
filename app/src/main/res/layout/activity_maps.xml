@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="pl.edu.agh.traveler.MapsActivity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#CC655f5f">
+            <CheckBox
+                android:id="@+id/radioPopular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nature"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:checked="true"/>
+            <View
+                android:id="@+id/VerticalLine"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#aaa"/>
+
+            <CheckBox
+                android:id="@+id/radioAZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Food"
+                android:layout_weight="1"
+                android:checked="false"/>
+            <View
+                android:id="@+id/VerticalLine"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#aaa"/>
+            <CheckBox
+                android:id="@+id/radioCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Sunset"
+                android:layout_weight="1"
+                android:checked="true"/>
+            <View
+                android:id="@+id/VerticalLine"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#aaa" />
+            <CheckBox
+                android:id="@+id/radioNearBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Plants"
+                android:layout_weight="1"
+                android:checked="false"/>
+        </LinearLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/rounded"
+        android:background="@android:color/transparent">
+    </ImageButton>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/heart"
+        android:background="@android:color/transparent">
+    </ImageButton>
+</FrameLayout>
